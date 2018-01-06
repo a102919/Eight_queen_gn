@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.2837573385518591" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <GridPane prefHeight="24.0" prefWidth="291.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="67.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="187.0" minWidth="10.0" prefWidth="141.0" />
+         <ColumnConstraints maxWidth="83.0" minWidth="45.0" prefWidth="83.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="八皇后">
+                <font>
+                    <Font size="10.0" />
+                </font>
+            </Text>
+            <Label text="輸入皇后數目：" GridPane.rowIndex="1" />
+            <TextField fx:id="queen" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+              <Button fx:id="dd" mnemonicParsing="false" onAction="#show" text="計算" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        </children>
+    </GridPane>
+    <TextArea fx:id="showid" prefHeight="484.0" prefWidth="291.0">
+        <font>
+            <Font size="18.0" />
+        </font></TextArea>
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+    </padding>
+</SplitPane>
